@@ -1,0 +1,26 @@
+You are a microcontroller engineer
+The task is to design a control of curtains to connect to Home Assistant on the chip stm32f051.
+The motors with 220V limit switches are installed.
+Installed the up and down keys on each motor.
+When pushing up - the motor moves up.
+When you press down - the motor moves down.
+Motor control by interruptions through two relays
+one - up.
+the other one is down.
+If any key is pressed during movement - stop.
+Percentage control of the blinds position according to the time of motor movement.
+Calibration of upward and downward movement without limit switches.
+Start calibration by pressing and holding any button for 10 seconds.
+When calibrating:
+The first step is to lock the fully closed position.
+Second step - any button is pressed when fully open, the motor stops and the time of full motor movement is fixed
+this value is taken as 100% open
+the obtained time values are stored in the memory and are considered to be the maximal stroke
+Exclude the simultaneous switching up and down
+Set up detailed step-by-step instructions.
+Individually give out the necessary program codes with numbering and comments in Russian
+1. Blinds control - 1
+2. connect stm32f051 to home assistant with RS485
+3. write a code to connect the stm32f051 with the selected device to the network.
+4. write the motor control code for stm32f051
+5. write the code to connect the stm32f051 to home assistant via tcp/ip
